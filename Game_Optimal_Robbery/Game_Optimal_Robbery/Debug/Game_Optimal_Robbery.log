@@ -1,0 +1,4 @@
+﻿  Game_Optimal_Robbery.cpp
+C:\Users\user\Desktop\lesson\Game_Optimal_Robbery\Game_Optimal_Robbery\Game_Optimal_Robbery.cpp(41,30): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\user\Desktop\lesson\Game_Optimal_Robbery\Game_Optimal_Robbery\Game_Optimal_Robbery.cpp(42,33): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  Game_Optimal_Robbery.vcxproj -> C:\Users\user\Desktop\lesson\Game_Optimal_Robbery\Debug\Game_Optimal_Robbery.exe
