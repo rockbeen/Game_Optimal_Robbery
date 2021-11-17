@@ -7,10 +7,10 @@ using namespace std;
 int maxElementID(vector<int> array)//возвращает id  самого большого числа в массиве
 {
     int biggestElement = 0;
-    int biggestElementID;
+    int biggestElementID=0;
     for (int i = 0;i < array.size();++i)
     {
-        if (biggestElement < array[i])//обновление самого большого
+        if (biggestElement >= array[i])//обновление самого большого
         {
             biggestElement = array[i];
             biggestElementID = i;
@@ -68,7 +68,34 @@ vector<int> robbery(vector<int> arrayResources,const int loadCapacity)
 
     int main()
     {
-      
+        int loadCapacity;
+        int sizeArray;
 
+        cout << "Enter the length of the array:" << endl;
+        cin >> sizeArray;
+
+        vector<int>  arrayResources;
+        cout << "Fill the array with resources:" << endl;
+        int value;
+        for (int i = 0;i < sizeArray;++i)
+        {
+            cin >> value;
+            arrayResources.push_back(value);
+
+        }
+        
+
+        cout << "Enter the load capacity:" << endl;
+        cin >> loadCapacity;
+
+  
+        arrayResources = robbery(arrayResources, loadCapacity);
+
+        cout << "Stolen resources:" << endl;
+        for (auto i : arrayResources)
+        {
+            cout << i << endl;
+        }
+   
     }
 
